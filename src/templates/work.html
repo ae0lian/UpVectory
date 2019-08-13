@@ -1,0 +1,79 @@
+---
+title: Our Projects
+body_class: work-page
+---
+
+{% set 
+    projects = [
+        {
+            name: 'Brand Manual for<br>Insight Vision GmbH',
+            href: '/brand-insight.html',
+            image: 'assets/images/work/insight-brand@2x.png',
+            image2x: 'assets/images/work/insight-brand@2x.png 2x',
+            image3x: 'assets/images/work/insight-brand@2x.png 3x'
+        },
+        {
+            name: 'Brand Guidelines for<br>SchedulesPro',
+            href: '/shedules-brand.html',
+            image: 'assets/images/work/shedules-brand@2x.png',
+            image2x: 'assets/images/work/shedules-brand@2x.png 2x',
+            image3x: 'assets/images/work/shedules-brand@2x.png 3x'
+        },
+        {
+            name: 'Illustrations for<br>Fabulous SM advertising',
+            href: '/fabulous.html',
+            image: 'assets/images/work/fabulous@2x.png',
+            image2x: 'assets/images/work/fabulous@2x.png 2x',
+            image3x: 'assets/images/work/fabulous@2x.png 3x'
+        },
+        {
+            name: 'User Interface for <br>SchedulesPro PWA',
+            href: '/shedules-interface.html',
+            image: 'assets/images/work/shedules-interface@2x.png',
+            image2x: 'assets/images/work/shedules-interface@2x.png 2x',
+            image3x: 'assets/images/work/shedules-interface@2x.png 3x'
+        },
+        {
+            name: 'Online Store<br>Protein.com.ua',
+            href: '/protein-store.html',
+            image: 'assets/images/work/protein@2x.png',
+            image2x: 'assets/images/work/protein@2x.png 2x',
+            image3x: 'assets/images/work/protein@2x.png 3x'
+        },
+        {
+            name: 'Web Interface for <br>Insight Vision GmbH',
+            href: '/interface-insight.html',
+            image: 'assets/images/work/insight-interface@2x.png',
+            image2x: 'assets/images/work/insight-interface@2x.png 2x',
+            image3x: 'assets/images/work/insight-interface@2x.png 3x'
+        }
+    ] 
+%}
+
+{% extends "layouts/_layout.html" %}
+
+
+{%block content %}
+<main class="main">
+    <div class="wrapper wrapper--desktop">
+    <section class="projects">
+        <h1 class="visually-hidden">Projects</h1>
+        <div class="projects__list">
+            {% for project in projects %}
+            <article class="projects__item project">
+                <a href="{{project.href}}" class="projects__link">
+                    <div class="project__image-wrapper">
+                        <img class="project__image" alt="Image Preview Of Project" src="{{project.image}}"
+                            srcset="{{project.image2x}},{{project.image3x}}">
+                    </div>
+                    <h2 class="project__title">{{project.name | safe }}</h2>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+        <a href="/contacts.html" class="projects__action">Contact Us</a>
+    </section>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,261 @@
+.protein
+    padding: 0
+
+    .main
+        +r(800)
+            padding-top: 100px
+        +r(500)
+            padding-top: 77px
+    .banner
+        height: 1200px
+        background: url('../assets/images/projects/protein-store/header-banner.png') no-repeat top 
+        background-size: contain
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/protein-store/header-banner@2x.png') no-repeat top
+            background-size: contain
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 20000px), only screen and ( min--moz-device-pixel-ratio: 2) and (max-width: 20000px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 20000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 20000px), only screen and (min-resolution: 192dpi) and (max-width: 20000px), only screen and (min-resolution: 2dppx) and (max-width: 20000px) 
+            background: url('../assets/images/projects/protein-store/header-banner@2x.png') no-repeat top
+            background-size: cover
+        +rmin(1200)
+            height: 1600px
+        +r(1100)
+            height: 900px
+        +r(800)
+            height: 650px
+            margin-top: 90px
+        +r(600)
+            margin-top: 100px
+            height: 300px
+    .about
+        &__title
+            display: block
+            font-family: 'robotobold'
+            font-size: 70px
+            color: #4CAF4E
+            text-align: center
+            margin: 100px auto
+            +r(800)
+                margin: 50px 0
+            +r(500)
+                font-size: 35px
+                margin: 40px 0
+                margin-top: 10px
+        &__describe
+            display: block
+            width: 900px
+            margin: 0 auto
+            font-family: 'muliregular'
+            font-size: 24px
+            color: #373537
+            margin-bottom: 2rem
+            text-align: center
+            +r(920)
+                width: 90%
+            +r(550)
+                font-size: 16px
+
+    .logo-concept
+        margin-top: 200px
+        +r(550)
+            margin-top: 80px
+        &__title
+            display: block
+            margin: 0 auto
+            margin-bottom: 100px
+            text-align: center
+            font-family: 'robotobold'
+            font-size: 60px
+            color: #4CAF4E
+            +r(500)
+                font-size: 45px
+                margin-bottom: 60px
+        &__wrapper
+            width: 980px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            align-items: center
+            +r(800)
+                width: 100%
+                flex-direction: column
+                align-items: center
+        &__block
+            +r(800)
+                margin-bottom: 55px
+                &:last-child
+                    margin-bottom: 0
+            +r(550)
+                margin-bottom: 30px
+        &__logo-subtitle
+            display: block
+            margin: 80px auto
+            margin-bottom: 68px
+            text-align: center
+            font-family: 'muliregular'
+            font-size: 24px
+            color: #373537
+        &__molecule
+            display: block
+            margin: 0 auto
+
+    .logo
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+            +r(500)
+                font-size: 45px
+        &__block
+            display: block
+            margin: 0 auto
+    
+    .color-palette
+
+        &__wrapper
+            width: 1150px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            +r(1100)
+                width: 90%
+            +r(700)
+                flex-direction: column
+                align-items: center
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+            +r(500)
+                font-size: 45px
+        .palette
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__color
+                width: 180px
+                height: 180px
+                border-radius: 50%
+                +r(800)
+                    width: 120px
+                    height: 120px
+            &__title
+                display: block
+                margin-top: 1.2rem
+                font-size: 24px
+                font-family: 'muliregular'
+                text-align: center
+            &__hex
+                display: block
+                margin: 1.7rem 0
+                font-size: 24px
+                font-family: 'muliregular'
+                text-align: center
+
+        .palette-lines
+            margin-top: 100px
+            &__block
+                height: 55px
+
+    .website-graphics
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+        &__wrapper
+            width: 1300px
+            max-width: 1300px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            +r(1200)
+                width: 100%
+                flex-direction: column
+                align-items: center
+                img:first-child
+                    margin-bottom: 55px
+            +r(500)
+                width: 90%
+                margin: 0 auto
+        &__screen
+            display: block
+            margin: 60px auto
+            +r(500)
+                width: 90%
+
+    .mobile-version
+        &__wrapper
+            width: 1300px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            +r(1200)
+                width: 100%
+                flex-direction: column
+                align-items: center
+                img
+                    margin-bottom: 55px
+                img:last-child
+                    margin-bottom: 0
+            +r(500)
+                width: 80%
+
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+
+    .desktop-version
+        display: flex
+        align-items: center
+        flex-direction: column
+        +r(500)
+                width: 90%
+                margin: 0 auto
+        img
+            margin-bottom: 2rem
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+            +r(600)
+                margin: 60px auto
+
+    .footer-banner
+        &__title
+            display: block
+            margin: 200px auto 100px auto
+            +r(500)
+                margin: 80px auto 40px auto
+            font-size: 60px
+            font-family: 'robotobold'
+            color: #4CAF4E
+            text-align: center
+            +r(600)
+                margin: 60px auto
+        &__image
+            width: 100%

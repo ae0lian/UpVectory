@@ -1,0 +1,91 @@
+
+
+.shedules-interface
+
+    &__title
+        font-size: 70px
+        color: #3E65FC
+        text-align: center
+        display: block
+        margin: 100px 0
+        font-family: "robotoblack"
+        +r(500)
+            font-size: 40px
+            margin: 50px 0
+        +r(400)
+            font-size: 30px
+    .banner
+        height: 900px
+        background: url('../assets/images/projects/shedules-interface/header-banner.png') no-repeat center
+        background-size: cover
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min--moz-device-pixel-ratio: 1.25), only screen and (-o-min-device-pixel-ratio: 1.25 / 1), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx)
+            background: url('../assets/images/projects/shedules-interface/header-banner@2x.png') no-repeat center
+            background-size: cover
+        +r(500)
+            height: 425px
+
+
+    .about
+        .describe
+            font-family: 'muliregular'
+            font-size: 24px
+            text-align: center
+            max-width: 1000px
+            display: block
+            margin: 0 auto
+            margin-bottom: 1.8rem
+            &:last-child
+                margin-bottom: 100px
+            +r(800)
+                padding: 0 40px
+            +r(500)
+                font-size: 18px
+    
+    .mobile-screens
+        &__wrapper
+            display: flex
+            margin: 0 auto
+            justify-content: space-between
+            margin-bottom: 70px
+            +r(1050)
+                flex-direction: column
+                align-items: center
+                margin-bottom: 0
+            &--2
+                max-width: 900px
+            &--3
+                max-width: 1350px
+        &__block
+            +r(1050)
+                width: 70%
+                margin-bottom: 50px
+            +r(500)
+                width: 80%
+
+
+        &__calendar
+            display: block
+            margin: 0 auto
+
+    .desktop-screens
+        +r(1200)
+            padding: 0 50px
+        +r(500)
+            padding: 0 20px
+        &__title
+            display: block
+            margin: 100px 0
+            font-size: 40px
+            text-transform: uppercase
+            color: #3E65FC
+            text-align: center
+            font-family: "robotoblack"
+            +r(500)
+                margin: 50px 0
+        &__block
+            display: block
+            margin: 0 auto
+            margin-bottom: 70px
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+
+    

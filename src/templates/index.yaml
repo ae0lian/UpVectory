@@ -1,0 +1,23 @@
+ProjectTitle: template-gulp
+
+PageList:
+- file: home.html
+  ready: 20
+- file: contacts.html
+  ready: 100
+- file: 404.html
+  ready: 100
+- file: services.html
+  ready: 20
+- file: work.html
+  ready: 20
+- file: protein-store.html
+  ready: 20
+- file: shedules-interface.html
+  ready: 20
+- file: interface-insight.html
+  ready: 20
+- file: fabulous.html
+  ready: 20
+- file: brand-insight.html
+  ready: 20

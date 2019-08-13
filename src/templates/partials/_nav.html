@@ -1,0 +1,68 @@
+{% set 
+    links = [
+    {
+        name: 'Home',
+        href: '/index.html'
+    },
+        {
+            name: 'Services',
+            href: '/services.html'
+        },
+        {
+            name: 'Work',
+            href: '/work.html'
+        },
+        {
+            name: 'Contacts',
+            href: '/contacts.html'
+        }
+    ] 
+%}
+
+{% set 
+    mobile_links = [
+        {
+            name: 'Home',
+            href: '/index.html'
+        },
+        {
+            name: 'Services',
+            href: '/services.html'
+        },
+        {
+            name: 'Work',
+            href: '/work.html'
+        },
+        {
+            name: 'Contacts',
+            href: '/contacts.html'
+        }
+    ] 
+%}
+
+
+
+<!-- Main Nav -->
+<nav class="main-nav">
+    {% for link in links %}
+    <a href="{{ link.href }}" class="main-nav__link main-nav__link--underline">{{ link.name }}</a>
+    {% endfor %}
+</nav>
+
+<!-- Menu Mobile -->
+<div class="mobile-nav">
+    <div class="mobile-nav__controls">
+        <img src="assets/images/header/burger.svg" alt="Menu Open Icon" class="mobile-nav__burger">
+        <img src="assets/images/header/close.svg" alt="Menu Close Icon" class="mobile-nav__close"></div>
+    <div class="mobile-nav__content">
+        <nav class="mobile-nav__list">
+            {% for link in mobile_links %}
+            <a href="{{ link.href }}" class="mobile-nav__link mobile-nav__link--underline">{{ link.name }}</a>
+            {% endfor %}
+        </nav>
+        <a href="malito:info@upvectory.com" class="mobile-nav__email">info@upvectory.com</a>
+        <ul class="mobile-nav__socials socials__list">
+            {% include "./_socials.html" %}
+        </ul>
+    </div>
+</div>

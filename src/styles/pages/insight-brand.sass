@@ -1,0 +1,399 @@
+.main.insight
+    padding: 0 0
+
+.insight
+
+    .banner
+        height: 900px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: url('../assets/images/projects/insight-brand/header-banner.jpg') no-repeat center
+        background-size: cover
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) , only screen and ( min--moz-device-pixel-ratio: 2) , only screen and (-o-min-device-pixel-ratio: 2/1) , only screen and (min-device-pixel-ratio: 2) , only screen and (min-resolution: 192dpi) , only screen and (min-resolution: 2dppx)  
+            background: url('../assets/images/projects/insight-brand/header-banner@2x.jpg') no-repeat center
+            background-size: cover
+        +r(500)
+            height: 600px
+
+        &__title
+            color: white
+            font-size: 70px
+            font-family: 'roboto_mediumregular'
+            +r(1100)
+                font-size: 60px
+            +r(650)
+                font-size: 30px
+                text-align: center
+    .about
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 200px
+        flex-direction: column
+        +r(600)
+            padding: 40px 0
+        .describe
+            font-family: 'muliregular'
+            font-size: 24px
+            text-align: center
+            max-width: 1000px
+            margin-bottom: 2rem
+            +r(550)
+                font-size: 16px
+
+    .section
+        margin-bottom: 6rem
+        &__title
+            text-align: center
+            color: white
+            text-transform: uppercase
+            font-size: 70px
+            font-family: 'roboto_mediumregular'
+            margin-bottom: 3rem
+            +r(550)
+                font-size: 39px
+                margin-bottom: 3rem
+
+    .logo
+        .wrapper
+            display: flex
+        &__block
+            height: 470px
+            width: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            +r(600)
+                height: 370px
+            &:first-child
+                background: white
+            &:last-child
+                background: black
+                .insight-vision
+                    fill: white
+
+    .logo-variations
+        .wrapper
+            display: flex
+            justify-content: space-between
+        &__block
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-left: 120px
+            width: 30%
+            +r(1100)
+                padding-top: 0
+                padding-left: 0
+            &--horizontal
+                padding-top: 75px
+                margin-top: 45px
+                width: 100%
+                display: flex
+                align-items: center
+                +r(550)
+                    padding-top: 20px
+
+        &__title
+            position: absolute
+            left: 0
+            top: 0
+            font-family: 'muliregular'
+            font-size: 24px
+            +r(1100)
+                width: 100%
+                text-align: center
+            +r(550)
+                font-size: 20px
+
+    .clearspace
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        svg
+            +r(600)
+                width: 250px
+                height: 230px
+    .color-palette
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__primary
+            position: relative
+            display: flex
+            justify-content: space-between
+            width: 40%
+            padding: 45px 0 
+            +r(1100)
+                flex-wrap: wrap
+                align-items: center
+                flex-direction: column
+            +r(550)
+                width: 100%
+        &__secondary
+            position: relative
+            display: flex
+            justify-content: space-between
+            width: 80%
+            padding: 45px 0
+            +r(1100)
+                flex-wrap: wrap
+                align-items: center
+                flex-direction: column
+            +r(550)
+                width: 100%
+        &__title
+            position: absolute
+            left: 0
+            top: 0
+            font-family: 'muliregular'
+            font-size: 24px
+            color: #373537
+        .palette
+            width: 300px
+            max-width: 300px
+            height: 470px
+            box-shadow: 0 15px 14px 0 rgba(0, 0, 0, 0.4)
+            font-family: 'muliregular'
+            +rmin(1100)
+                margin-right: 20px
+            +r(500)
+                width: 100%
+            +r(1100)
+                margin-top: 2rem
+            &__color
+                width: 300px
+                max-width: 300px
+                height: 300px
+                +r(500)
+                    width: 100%
+                &--white
+                    background: white
+                &--black
+                    background: black
+                &--cyan
+                    background: #7FB7B0
+                &--grayish-blue
+                    background: #98ADBD
+                &--dark-blue
+                    background: #3F5864
+                &--dark-cyan
+                    background: #212C2F
+                
+            &__info
+                height: 170px
+                width: 300px
+                max-width: 300px
+                padding: 15px
+                caption
+                    font-family: 'muliregular'
+                    font-size: 22px
+                    height: 40px
+                tr
+                    height: 30px
+                    font-family: 'muliregular'
+                    
+                +r(500)
+                    width: 100%
+
+
+    .pattern
+        &__block
+            width: 100%
+            height: 450px
+            background: url('../assets/images/projects/insight-brand/pattern.svg') top left repeat
+
+    
+    .typography
+        font-family: 'roboto_mediumregular' //fix after on black roboto
+
+        .wrapper
+            max-width: 1300px
+            display: flex
+            flex-wrap: wrap
+            margin: 0 auto
+            padding: 0
+            justify-content: center
+            +r(1200)
+                flex-direction: column
+                align-items: center
+            +r(500)
+        .type
+            width: 50%
+            display: flex
+            justify-content: center
+            +r(1100)
+                width: auto
+                margin-bottom: 2rem
+
+            &__title
+                font-size: 34px
+                position: relative
+                display: inline-block
+                +r(550)
+                    font-size: 25px
+                &:before
+                    position: absolute
+                    content: ''
+                    height: 5px
+                    background-color: #3F5864
+                    width: 110%
+                    left: 0
+                    bottom: -1rem
+            &__char
+                display: inline-block
+                font-size: 67px
+                +r(1100)
+                    margin-left: 2rem
+                +r(500)
+                    font-size: 37px
+                    margin-left: 10px
+                    
+            &__chars
+                margin-top: 1rem
+                font-size: 20px
+                max-width: 390px
+                +r(500)
+                    font-size: 16px
+        .texts
+            margin-top: 4rem
+            +r(1100)
+                margin-top: 8rem
+            +r(500)
+            &__delimiter
+                width: 3px
+                height: 100%
+                background: #9B9A9B
+            span:first-child
+                width: 172px
+                text-align: center
+            span:last-child
+                padding-left: 2rem
+
+            &__h1
+                font-family: 'robotobold'
+                font-size : 35px
+                text-transform : uppercase
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 100px
+                +r(550)
+                    width: 100%
+                    font-size: 22px
+                
+            &__h2
+                font-family: 'robotobold'
+                font-size : 25px
+                text-transform : uppercase
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 90px
+                +r(550)
+                    width: 100%
+                    font-size: 22px                
+            &__subheadings
+                font-family: 'arimobold'
+                font-weight : bold
+                font-size : 22px
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 80px
+                +r(550)
+                    width: 100%
+                    font-size: 18px
+                
+            &__digital-text
+                font-family: 'arimoregular'
+                font-size : 18px
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 70px
+                +r(550)
+                    width: 100%
+                    font-size: 16px                
+            &__printing-text
+                font-family: 'arimoregular'
+                font-size : 16px
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 60px
+                +r(550)
+                    width: 100%
+                    font-size: 14px               
+            &__caption
+                font-family: 'arimoregular'
+                font-size : 14px
+                color : #373537
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4)
+                margin: 2rem auto
+                width: 50%
+                display: flex
+                align-items: center
+                height: 50px
+                +r(550)
+                    width: 100%
+                
+
+    .iconography
+        margin-bottom: 60px
+        .icon
+            +r(1200)
+                font-size: 5rem
+            +r(1200)
+                font-size: 3rem
+
+        &__wrapper  
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 500px
+            +r(1100)
+                height: 400px
+            +r(500)
+                height: 550px
+
+        &__icon-set
+            // width: 900px
+            // display: flex
+            // flex-direction: column
+            // justify-content: space-between
+            // height: 70%
+            display: grid
+            grid-template: repeat(3, 1fr) / repeat(9, 1fr)
+            align-items: center
+            justify-items: center
+            grid-column-gap: 10px
+            grid-row-gap: 45px
+            +r(550)
+                grid-template: repeat(4, 1fr) / repeat(5, 1fr)
+        &__row
+            display: flex
+            justify-content: space-between
+
+    .print-assets
+        &__image
+            display: block
+            margin: 0 auto

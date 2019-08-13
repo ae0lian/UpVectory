@@ -1,0 +1,101 @@
+---
+title: Project Insight Interface
+html_class: project_page
+---
+
+
+{% extends "layouts/_layout.html" %}
+
+{%block content %}
+<main class="main insight-interface">
+    <div class="banner">
+        <div class="banner__inner wow pulse"   data-wow-delay="0.2s" data-wow-iteration="2"></div>
+    </div>
+    <div class="about wow slideInUp">
+        <h1 class="about__title">
+            Web Interface for <br>
+            Insight Vision GmbH
+        </h1>
+        <p class="about__describe">Our client came to us with a request to create an "outstanding design with amazing
+            user experience". They didn’t want something usual, ordinary that seems like a template. </p>
+
+        <p class="about__describe">After we clarified all the requirements we have started research to understand the
+            business needs and challenges of our client.
+        </p>
+
+        <p class="about__describe">
+            The key requirement was to create an intuitive and functional design.
+        </p>
+        <p class="about__describe">We provided all the ideas we collected, and after the client chose the concept, we
+            have started to create an interface.</p>
+        <p class="about__describe">
+            The mix of our design and amazing pictures of the Insight Vision interior design works gave us exactly what
+            our client expected.
+        </p>
+    </div>
+    <div class="project-photos">
+        <div class="project-photos__block project-photos__block--1 retina--restaurant wow slideInUp"
+            style="background: url('assets/images/projects/insight-interface/restaurant.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title ">INSIGHT VISION</div>
+            <div class="project-photos__subtitle ">We create the future of your interior spaces</div>
+            <div class="logo-block"><img width="115px" height="100px" src="assets/images/projects/insight-interface/logo.svg" alt="Image Of Logo"></div>
+        </div>
+        <div class="project-photos__block project-photos__block--3">
+            <div class="project-photos__sub-block sub-block retina--hospitaly wow slideInLeft"
+                style="background: url('assets/images/projects/insight-interface/hospitaly.jpg'); background-size: cover;">
+                <div class="sub-block__title">Hospitaly</div>
+            </div>
+            <div class="project-photos__sub-block sub-block retina--retail wow slideInUp"
+                style="background: url('assets/images/projects/insight-interface/retail.jpg'); background-size: cover;">
+                <div class="sub-block__title">Retail</div>
+            </div>
+            <div class="project-photos__sub-block sub-block retina--360 wow slideInRight" style="background: url('assets/images/projects/insight-interface/360.jpg'); background-size: cover;">
+                <div class="sub-block__title">360</div>
+            </div>
+            <div class="project-photos__title ">WHAT WE DO</div>
+            <div class="project-photos__subtitle ">Overview Of Our Projects</div>
+
+        </div>
+        <div class="project-photos__block retina--architecture wow slideInLeft"
+            style="background: url('assets/images/projects/insight-interface/architecture.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">WHAT WE GET</div>
+            <div class="project-photos__subtitle">Our Services</div>
+        </div>
+        <div class="project-photos__block retina-peoples wow slideInRight"
+            style="background: url('assets/images/projects/insight-interface/peoples.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">WHAT WE ARE</div>
+            <div class="project-photos__subtitle">Our Story / Our Team / About Us</div>
+        </div>
+        <div class="project-photos__block retina-fireplace wow slideInLeft"
+            style="background: url('assets/images/projects/insight-interface/fireplace.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">WHAT THEY ARE SAYING</div>
+            <div class="project-photos__subtitle">Testimonials / Reviews / Press articles / Magazines</div>
+        </div>
+        <div class="project-photos__block retina-studio wow slideInRight"
+            style="background: url('assets/images/projects/insight-interface/studio.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">WHAT WE ARE SAYING</div>
+            <div class="project-photos__subtitle">Blog</div>
+        </div>
+        <div class="project-photos__block retina-office wow slideInLeft"
+            style="background: url('assets/images/projects/insight-interface/office.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">JOIN US</div>
+            <div class="project-photos__subtitle">Open Job Invitations And Internships</div>
+        </div>
+        <div class="project-photos__block get-in-touch wow slideInUp"
+            style="background: url('assets/images/projects/insight-interface/restaurant.jpg') center no-repeat;  background-size: cover;">
+            <div class="project-photos__title">GET IN TOUCH </div>
+            <div class="get-in-touch__form">
+                <span class="get-in-touch__subtitle">SUBSCRIBE TO RECEIVE OUR NEWS</span>
+                <div class="get-in-touch__input"></div>
+                <div class="get-in-touch__button">SUBSCRIBE</div>
+            </div>
+        </div>
+    </div>
+    <div class="map retina--map" style="background: url('assets/images/projects/insight-interface/map.jpg') center no-repeat; background-size: cover;">
+    </div>
+    <div class="footer">
+        <div class="copyright">&copy; 2019 <br> Insight Vision GmbH <br> <span>Impressum</span></div>
+    </div>
+    <a href="/work.html" class="project__action">Back</a>
+</main>
+{% endblock %}

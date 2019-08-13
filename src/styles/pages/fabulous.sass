@@ -1,0 +1,143 @@
+.main.fabulous
+    position: relative
+    padding: 0 0
+    background: rgb(22,175,202)
+    background: linear-gradient(90deg, rgba(22,175,202,1) 0%, rgba(78,163,205,1) 100%)
+
+.fabulous
+
+    img
+        display: block
+        box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.4)
+
+    .banner
+        height: 1170px
+        display: flex
+        align-items: center
+        justify-content: center
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.3)
+        background: url('../assets/images/projects/fabulous/header-banner.png') no-repeat center
+        background-size: cover
+        +r(1150)
+            height: 768px
+        +r(550)
+            height: 600px
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min--moz-device-pixel-ratio: 1.25), only screen and (-o-min-device-pixel-ratio: 1.25 / 1), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx)
+            background: url('../assets/images/projects/fabulous/header-banner@2x.png') no-repeat center
+            background-size: cover
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.25)  and (max-width: 520px), only screen and (min--moz-device-pixel-ratio: 1.25) and (max-width: 520px), only screen and (-o-min-device-pixel-ratio: 1.25 / 1) and (max-width: 520px), only screen and (min-device-pixel-ratio: 1.25) and (max-width: 520px), only screen and (min-resolution: 200dpi) and (max-width: 520px), only screen and (min-resolution: 1.25dppx) and (max-width: 520px)
+            background: url('../assets/images/projects/fabulous/header-banner-mobile.png') no-repeat center
+            background-size: cover
+        +r(500)
+            height: 425px
+        &__title
+            color: white
+            font-size: 70px
+            font-family: 'roboto_mediumregular'
+            +r(550)
+                font-size: 55px
+    .about
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 71px
+        flex-direction: column
+        +r(550)
+            padding: 20px
+        .title
+            font-family: 'roboto_mediumregular' // make black roboto
+            font-size: 70px
+            text-align: center
+            color: white
+            max-width: 1000px
+            margin-bottom: 2rem
+            +r(550)
+                font-size: 30px
+                br
+                    display: none
+        .describe-wrapper
+            margin-top: 2rem
+            width: 100%
+            box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.4)
+            text-align: center
+            +r(550)
+                box-shadow: none
+        .describe
+            font-family: 'muliregular'
+            font-size: 24px
+            text-align: center
+            padding: 2rem 26rem
+            margin-bottom: 2rem
+            color: white
+            +r(1100)
+                padding: 2rem 8rem
+            +r(500)
+                font-size: 15px
+                padding: 0
+                margin-bottom: 1rem
+
+    .project-images
+        padding: 50px 71px
+        img
+            cursor: pointer
+            transition: transform 0.3s ease-in
+        img:hover
+            transform: scale(1.2)
+        +r(550)
+            padding: 30px
+    .sketch, .single-illustration
+        margin: 4rem auto
+    .illustration-wrapper
+        display: flex
+        justify-content: space-between
+        margin-bottom: 4rem
+        +r(1100)
+            flex-direction: column
+            align-items: center
+            img:first-child
+                margin-bottom: 60px
+        &--small
+            justify-content: center
+            img:first-child
+                margin-right: 3rem
+                +r(550)
+                    margin-right: 0
+
+.page-button
+    display: block
+    position: relative
+    overflow: hidden
+    width: 180px
+    margin-left: auto
+    margin-top: 95px
+    text-align: center
+    line-height: 35px
+    background-color: #FF7E00
+    border-radius: 9px
+    font-family: 'mulibold'
+    font-size: 18px
+    text-decoration: none
+    color: white
+    transition: all 0.2s linear
+    &:hover
+        transform: scale(1.2)
+    +r(600)
+        margin: 30px auto
+
+    &:before 
+        content: ''
+        position: absolute
+        top: -50%
+        right: -50%
+        bottom: -50%
+        left: -50%
+        background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0))
+        transform: rotateZ(60deg) translate(-5em, 7.5em)
+
+    &:hover:before, &:focus:before 
+        animation: sheen 1s forwards
+
+
+@keyframes sheen 
+    100% 
+        transform: rotateZ(60deg) translate(1em, -9em)

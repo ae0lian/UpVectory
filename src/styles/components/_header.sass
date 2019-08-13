@@ -1,0 +1,198 @@
+.main-header
+    position: absolute
+    top: 0
+    left: 0 
+    right: 0
+    z-index: 97
+
+    padding: 40px 0 15px 0
+
+
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+
+    &__logo
+        cursor: pointer
+        img
+        +r(1100)
+            width: 241px
+            height: 30px
+        +r(820)
+            width: 176px
+            height: 20px
+            
+
+
+    &__logo:hover
+        animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both
+        transform: translate3d(0, 0, 0)
+        backface-visibility: hidden
+        perspective: 1000px
+
+
+.main-nav
+    display: flex
+    margin-left: auto
+    +r(550)
+        display: none
+
+    &__link
+        color: inherit
+        text-decoration: none
+        font-family: 'muliregular'
+        font-size: 24px
+        display: inline-block
+        position: relative
+        overflow: hidden
+        padding-bottom: 8px
+        transition: all 0.1s ease-out
+        margin-left: 5.5rem
+        +r(1100)
+            font-size: 23px
+            margin-left: 4rem
+        +r(820)
+            font-size: 16px
+            margin-left: 2rem
+        &:hover
+            color: #18cef6
+            transform: scale(1.1)
+
+        
+        &--underline
+            +rmin(375)
+                &:before 
+                    content: ''
+                    position: absolute
+                    border-bottom: 4px solid #eee
+                    padding: 0 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+                    width: 0
+                    transition: 0.2s ease-out
+                
+                &:hover:before 
+                    width: 100%
+                    padding: 0
+
+.mobile-nav
+    display: none
+    position: absolute
+    right: 25px
+    top: 40px
+    width: 30px
+    height: 30px
+    z-index: 100
+    +r(550)
+        display: block
+
+    &__controls
+        position: absolute
+        z-index: 100
+        &--active
+            .mobile-nav__burger
+                display: none
+            .mobile-nav__close
+                display: block
+    &__close
+        display: none
+
+
+    &__content
+        display: flex
+        align-items: center
+        position: fixed
+        right: 0
+        top: 0
+        bottom: 0
+        flex-direction: column
+        background-color: #f3f3f3
+        transition: 0.5s
+        transform: translateX(+100%)
+        z-index: 99
+        width: 90%
+        border-bottom-left-radius: 30px
+        &.active
+            transform: translateX(0)
+        
+    &__email
+        display: block
+        color: inherit
+        text-decoration: none
+        margin-top: 100px
+        margin-bottom: 1rem
+
+
+    &__list
+        display: flex
+        flex-direction: column
+        align-items: center      
+        margin-top: 130px  
+        
+    &__link
+        color: inherit
+        text-decoration: none
+        font-family: 'muliregular'
+        font-size: 24px
+        display: inline-block
+        position: relative
+        padding-bottom: 9px
+        overflow: hidden
+        transition: all 0.1s ease-out
+        margin-bottom: 15px
+        &:hover
+            color: #18cef6
+            transform: scale(1.1)
+
+        
+        &--underline
+            +rmin(375)
+                &:before 
+                    content: ''
+                    position: absolute
+                    border-bottom: 4px solid #eee
+                    padding: 0 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+                    width: 0
+                    transition: 0.2s ease-out
+                
+                &:hover:before 
+                    width: 100%
+                    padding: 0
+
+    &__socials
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+        .icon
+            fill: #9B9A9B
+            font-size: 1.3rem
+            transition: transform 0.3s ease-out
+        .icon:hover
+            fill: #18cef6
+            transform: scale(1.5)
+    .socials
+        &__item
+            margin-left: 1rem
+                    
+
+// Animations
+
+@keyframes shake 
+  10%, 90% 
+    transform: translate3d(-1px, 0, 0)  
+  20%, 80% 
+    transform: translate3d(2px, 0, 0)
+  30%, 50%, 70% 
+    transform: translate3d(-4px, 0, 0)
+  40%, 60% 
+    transform: translate3d(4px, 0, 0)
+

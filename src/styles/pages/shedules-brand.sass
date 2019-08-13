@@ -1,0 +1,535 @@
+.main.shedules
+    padding: 0 0
+
+.shedules
+
+    &__title
+        font-size: 60px
+        font-family: 'robotoblack'
+        color: #3E65FC
+        display: block
+        position: relative
+        display: block
+        margin: 80px 0 120px 0
+        +r(1100)
+            font-size: 45px
+        +r(500)
+            font-size: 35px
+            margin: 80px 0 60px 0
+        &:before
+            position: absolute
+            content: ''
+            bottom: -1rem
+            width: 12%
+            height: 2px
+            background: #F9FAFC
+
+    .banner
+        position: relative
+        height: 1700px
+        display: flex
+        background: #92A0DA
+        +r(1100)
+            height: 1000px
+        +r(500)
+            height: 500px
+        &__inner
+            height: 100%
+            width: 100%
+            background-size: cover
+            background: url('../assets/images/projects/shedules-brand/header-banner.png') no-repeat center
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min--moz-device-pixel-ratio: 1.25), only screen and (-o-min-device-pixel-ratio: 1.25 / 1), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx)
+                background: url('../assets/images/projects/shedules-brand/header-banner@2x.png') no-repeat center 
+                background-size: cover
+            @media only screen and (max-width: 1029px)
+                background: url('../assets/images/projects/shedules-brand/header-banner-tablet.png') no-repeat center 
+                background-size: cover
+    
+    .about
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 50px
+        &__title
+            color: #3E65FC
+            font-size: 70px
+            margin-bottom: 4rem
+            font-family: 'robotoblack'
+            +r(800)
+                font-size: 60px
+            +r(500)
+                font-size: 30px
+        &__describe
+            display: block
+            max-width: 800px
+            color: #373537
+            font-size: 24px
+            font-family: 'muliregular'
+            margin-bottom: 1.5rem
+            +r(800)
+                font-size: 20px
+            +r(500)
+                font-size: 16px
+
+    .logo-concept
+        &__wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+
+    .logo-variation
+
+        &__grid-container
+            display: grid
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr 1fr
+            grid-gap: 42px
+            height: 720px
+            +r(800)
+                height: 500px
+            +r(500)
+                height: 300px
+
+        &__logo
+            grid-row: 1 / -1
+            grid-column: 1 / span 1
+            background-color: white
+
+            display: flex
+            background: white
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            img
+                +r(800)
+                    width: 70%
+
+            img:first-child
+                display: block
+                margin-bottom: 2rem
+
+        &__icon
+            grid-row: span 1
+            grid-column: span 1
+            background-color: white
+
+            display: flex
+            background: white
+            align-items: center
+            justify-content: center
+            img
+                +r(800)
+                    width: 40%
+
+        &__wordmark
+            grid-row: span 1
+            grid-column: span 1
+            background-color: white
+
+            display: flex
+            background: white
+            align-items: center
+            justify-content: center
+            img
+                +r(1100)
+                    width: 340px
+                +r(1100)
+                    width: 240px
+                +r(500)
+                    width: 100px
+
+    
+    .logo-clearspace
+        &__wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+        &__logo
+            +r(500)
+                width: 70%
+
+    .minimum-logo-size
+        &__row-wrapper
+            display: flex
+            img:first-child
+                margin-bottom: 1rem
+            +r(500)
+                flex-direction: column
+                align-items: center
+        &__block
+            flex-basis: 50%
+            display: flex
+            align-items: center
+            padding: 0 100px
+            +r(1100)
+                flex-direction: column
+                justify-content: center
+            +r(500)
+                margin-top: 40px
+                padding: 0
+            &-title
+                font-family: 'roboto_lightregular'
+                color: #34A2FB
+                font-size: 20px
+                margin-left: auto
+                +r(1100)
+                    margin: 30px auto
+                +r(500)
+                    text-align: center
+                
+        &__svg-wrapper
+            display: flex
+            flex-direction: column
+
+    .typography
+        &__grid-container
+            display: grid
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr 1fr
+            grid-gap: 42px
+            height: 550px
+
+            align-items: center
+            +r(1100)
+                height: 800px
+            +r(500)
+                grid-template-rows: 1fr 1fr 1fr
+                grid-template-columns: 1fr 
+                height: 1450px
+
+        &__texts
+            align-self: stretch
+            grid-row: 1 / 3
+            grid-column: 2 / 3
+            background-color: white
+            +r(1100)
+                grid-column: 1 / -1
+                grid-row: 1 / 2
+            +r(500)
+                grid-row: 1 span
+                grid-column: 1 span
+
+            background: white
+            border-radius: 20px
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2)
+        .texts
+            display: flex
+            justify-content: center
+            align-items: center
+            +r(500)
+                padding: 0 10px
+            &__block
+                margin-right: 2rem
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 70%
+                &:last-child
+                    margin-right: 0
+                +r(500)
+                    margin: 0
+
+            &__h1
+                font-family: 'robotoblack'
+                font-size: 39px
+                color: black
+                +r(500)
+                    font-size: 24px
+            &__h2
+                font-family: 'robotoblack'
+                font-size: 30px
+                color: black
+                +r(500)
+                    font-size: 20px
+            &__subheader
+                font-size: 28px
+                font-family: 'roboto_lightregular'
+                +r(500)
+                    font-size: 19px
+            &__title
+                font-size: 24px
+                +r(500)
+                    font-size: 19px
+            &__button
+                font-size: 24px
+                +r(500)
+                    font-size: 14px
+            &__body-1
+                font-family: 'roboto_lightregular'
+                font-size: 21px
+                +r(500)
+                    font-size: 21px
+            &__body-2
+                font-family: 'roboto_lightregular'
+                font-size: 18px
+                +r(500)
+                    font-size: 8px
+            &__caption
+                font-family: 'roboto_lightregular'
+                font-size: 16px
+                +r(500)
+                    font-size: 8px
+        &__type
+            grid-row: span 1
+            grid-column: span 1
+            background-color: white
+
+            display: flex
+            background: white
+            align-items: center
+            justify-content: center
+            align-self: stretch
+            flex-direction: column
+
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2)
+            +r(800)
+                padding: 20px 30px
+
+        .type
+            border-radius: 20px
+            &--roboto-light
+                font-family: 'roboto_lightregular'
+            &__title
+                font-size: 45px
+                color: #3E65FC
+                margin-right: 2rem
+                +r(500)
+                    display: block
+            &__char
+                font-family: 'roboto_lightregular'
+                color: #92A0DA
+                font-size: 88px
+            &__chars
+                font-family: 'roboto_lightregular'
+                color: #666666
+                font-size: 22px
+
+            &--roboto-black
+                font-family: 'robotoblack' 
+            &__title
+                font-size: 45px
+                color: #3E65FC
+                margin-right: 2rem
+            &__char
+                font-family: 'roboto_lightregular'
+                color: #92A0DA
+                font-size: 88px
+            &__chars
+                font-family: 'roboto_lightregular'
+                color: #666666
+                font-size: 22px                    
+            
+    .color-palette
+        &__wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            margin: 0 auto
+            max-width: 1200px
+            .palette
+                display: flex
+                border-radius: 12px
+                width: 330px
+                margin-bottom: 3rem
+                margin-right: 4rem
+                box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.4)
+                background: white
+                cursor: pointer
+                transition: 0.3s transform ease-in
+                +r(500)
+                    width: 290px
+                    margin: 0
+                    margin-bottom: 30px
+                &:hover
+                    transform: scale(1.1)
+                &__info
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    margin: 0 auto
+                    padding: 10px
+                &__title
+                    text-align: center
+                    margin-bottom: 0.5rem
+                    color: #333333
+                    font-size: 16px
+                    font-family: "roboto_lightregular"
+                &__hex
+                    text-align: center
+                    color: #4D4D4D
+                    font-size: 14px
+                    font-family: "roboto_lightregular"
+                table
+                    overflow: hidden
+                    border-collapse: collapse
+                    width: 200px
+                    height: 120px
+                    border-top-left-radius: 10px
+                    border-bottom-left-radius: 10px
+                    td
+                        width: 62px
+                        height: 40px
+
+    .iconography
+
+        .icon
+            +r(800)
+                font-size: 3rem
+            +r(500)
+                font-size: 1.5rem
+        &__wrapper  
+            background: white
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 500px
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.2)
+            +r(800)
+                height: 380px
+
+        &__icon-set
+            // width: 900px
+            // display: flex
+            // flex-direction: column
+            // justify-content: space-between
+            // height: 70%
+            display: grid
+            grid-template: repeat(3, 1fr) / repeat(8, 1fr)
+            align-items: center
+            justify-items: center
+            grid-gap: 50px
+            +r(800)
+                grid-gap: 40px 20px
+                padding: 30px
+            +r(500)
+                grid-gap: 30px 5px
+                grid-template: repeat(4, 1fr) / repeat(4, 1fr)
+        &__row
+            display: flex
+            justify-content: space-between
+    .symbols
+        margin-bottom: 180px
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            +r(500)
+                flex-direction: column
+        &__app-bar
+            height: 1000px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            +r(500)
+                margin-bottom: 100px
+        &__buttons
+            height: 650px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+        &__form-elements
+            height: 450px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+
+
+        .buttons
+            &__title
+                color: #4D4D4D
+                font-family : 'roboto_lightregular'
+                font-size : 20px
+            &__button-hover
+                text-align: center
+                background : #3E65FC
+                width : 219px
+                line-height : 60px
+                border-radius : 30px
+                font-family : 'robotoblack'
+                font-size : 19px
+                color : #FFFFFF
+                +r(800)
+                    transform: scale(0.8)
+
+            &__button-disabled
+                text-align: center
+                background : #BDCCD4
+                
+                width : 219px
+                line-height : 60px
+                border-radius : 30px
+                font-family : 'robotoblack'
+                font-size : 19px
+                color : #FFFFFF
+                +r(800)
+                    transform: scale(0.8)
+                
+            &__button-small
+                text-align: center
+                background : #3E65FC
+                
+                width : 116px
+                line-height : 47px
+                border-radius : 23px
+                font-family : 'robotoblack'
+                font-size : 22px
+                color : #FFFFFF
+                +r(800)
+                    transform: scale(0.8)
+                
+
+            &__button-border
+                text-align: center
+                background : #FFFFFF
+                
+                border-style : Solid
+                border-color : #92A0DA
+                
+                border-width : 2px
+                opacity : 0.81
+                width : 160px
+                line-height : 50px
+                font-family : 'roboto_lightregular'
+                font-size : 20px
+                color : #000000
+                +r(800)
+                    transform: scale(0.8)
+                
+            &__button-border-hover
+                text-align: center
+                background : #3E65FC
+                
+                opacity : 0.81
+                width : 160px
+                line-height : 50px
+                font-family : 'roboto_mediumregular'
+                font-size : 20px
+                color : #000000
+                
+                +r(800)
+                    transform: scale(0.8)
+            
+        .app-bar
+            &__title
+                color: #4D4D4D
+                font-family: 'roboto_lightregular'
+                font-size: 22px
+            &__title:nth-of-type(2)
+                margin-top: 100px
+                +r(800)
+                    margin-top: 20px
+            img
+                width: 80%
+
+        .form-elements
+            &__title
+                color: #4D4D4D
+                font-family: 'roboto_lightregular'
+                font-size: 22px
+            &__title:nth-of-type(2)
+                margin-top: 40px
+                

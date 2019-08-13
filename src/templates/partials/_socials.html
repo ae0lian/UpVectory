@@ -1,0 +1,44 @@
+{% set 
+    links = [
+        {
+            name: 'behance',
+            folder: 'socials',
+            href: 'https://www.behance.net/upvectory'
+        },
+        {
+            name: 'dribble',
+            folder: 'socials',
+            href: 'https://dribbble.com/upvectory'
+        },
+        {
+            name: 'facebook',
+            folder: 'socials',
+            href: 'https://www.facebook.com/UpVectory/'
+        },
+        {
+            name: 'instagram',
+            folder: 'socials',
+            href: 'https://twitter.com/UpVectory'
+        },        
+        {
+            name: 'linkedin',
+            folder: 'socials',
+            href: 'https://twitter.com/UpVectory'
+        },
+        {
+            name: 'twitter',
+            folder: 'socials',
+            href: 'https://twitter.com/UpVectory'
+        },
+        {
+            name: 'pinterest',
+            folder: 'socials',
+            href: 'https://www.pinterest.com/upvectory/'
+        }
+
+    ] 
+%}
+
+{% for link in links %}
+        <li class="socials__item"><a href="{{ link.href }}">{{mixins.icon(link.name, link.folder)}}</a></li>
+{% endfor %}

@@ -1,0 +1,77 @@
+
+// Footer
+.socials
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer
+    font-family: 'muli_lightregular'
+    font-size: 18px
+    padding: 25px 0
+    border-top: 1px solid #CCCBCC
+
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +r(780)
+            border-color: #CCCBCC
+        +r(650)
+            flex-direction: column-reverse
+            align-items: center
+
+
+
+    &__logo
+        display: flex
+        align-items: center
+        text-decoration: none
+        &:visited
+            color: #1E1D1E
+        img
+            margin-top: -2px
+            margin-left: 7px
+            +r(800)
+                width: 100
+                height: 10px
+            +r(650)
+                margin-top: 0
+        +r(650)
+            margin-top: 30px
+    &__copyright
+        color: #1E1D1E
+        &__year
+            color: #1E1D1E
+            +r(800)
+                font-size: 15px
+
+    .socials
+        +r(650)
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__desc
+            margin-right: 10px
+            +r(800)
+                margin-right: 30px
+                font-size: 14px
+            +r(650)
+                margin-bottom: 30px
+                margin-right: 0
+        &__list
+            display: flex
+            justify-content: space-between
+        &__item
+            margin-left: 22px
+            +r(500)
+                margin-left: 16px
+
+            .icon
+                fill: #9B9A9B
+                font-size: 1.3rem
+                transition: transform 0.3s ease-out
+            .icon:hover
+                fill: #18cef6
+                transform: scale(1.5)
+

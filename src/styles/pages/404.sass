@@ -1,0 +1,207 @@
+.not_found_page
+    background: linear-gradient(135deg, rgba(216, 214, 216, 1) 0%, rgba(155, 154, 155, 1) 100%)
+    main
+        position: relative
+        padding-top: 100px
+        padding-bottom: 180px
+        display: flex
+        +r(920)
+            padding-bottom: 0
+        +r(400)
+            padding: 50px 0
+        +r(320)
+            padding: 0
+.not_found
+    &__right-section
+        width: 60%
+
+        height: 100vh
+        padding-top: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-left: 10px
+        +r(920)
+            width: 100%
+            padding-top: 50px
+        +r(320)
+            padding: 0
+            padding-top: 100px
+
+    &__subtitle
+        display: block
+        margin-top: 55px
+        +r(1500)
+            width: 500px
+            height: 50px
+        +r(1070)
+            width: 400px
+            height: 40px
+        +r(800)
+            width: 350px
+            height: 35px
+            margin-top: 30px
+        +r(600)
+            width: 250px
+            height: 25px
+            margin-top: 30px            
+
+    &__oops
+        +r(1500)
+            width: 400px
+            height: 80px
+        +r(1070)
+            width: 300px
+            height: 70px
+            margin-bottom: 20px
+    &__button
+        display: inline-block
+        top: 140px
+        position: relative
+        width : 209px
+        line-height : 35px
+        color: white
+        background : #FF7E00
+        border-radius : 9px
+        text-align: center
+        overflow: hidden
+        text-decoration: none
+        cursor: pointer
+        +r(1070)
+            top: 50px
+        &:before
+            content: ''
+            position: absolute
+            top: -50%
+            bottom: -50%
+            right: -50%
+            left: -50%
+            transform: rotateZ(60deg) translate(-5em, 7.5em)
+            background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0))
+        &:hover:before, &:focus:before 
+            animation: sheen 1s forwards
+
+
+
+    &__lines
+        position: absolute
+        bottom: 0
+        right: 0
+        +r(400)
+            display: none
+    &__circles
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 700px
+        height: 700px
+        border-radius: 50%
+        opacity: 0.7
+        background : linear-gradient(135deg, rgba(216, 214, 216, 1) 0%, rgba(155, 154, 155, 1) 100%)
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2)
+        +r(1600)
+            width: 600px
+            height: 600px
+        +r(1400)
+            width: 500px
+            height: 500px
+        +r(1070)
+            width: 400px
+            height: 400px
+        &:before
+            content: ""
+            left: 50%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
+            position: absolute
+            width: 600px
+            height: 600px
+            background : linear-gradient(135deg, rgba(216, 214, 216, 1) 0%, rgba(155, 154, 155, 1) 100%)
+            opacity: 0.7
+            border-radius: 50%
+            z-index: -1
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2)
+            +r(1600)
+                width: 500px
+                height: 500px
+            +r(1400)
+                width: 400px
+                height: 400px
+            +r(1070)
+                width: 300px
+                height: 300px
+        &:after
+            content: ""
+            left: 50%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
+            position: absolute
+            width: 500px
+            height: 500px
+            background : linear-gradient(135deg, rgba(216, 214, 216, 1) 0%, rgba(155, 154, 155, 1) 100%)
+            opacity: 0.7
+            border-radius: 50%
+            z-index: -1
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2)
+            +r(1600)
+                width: 400px
+                height: 400px
+            +r(1400)
+                width: 300px
+                height: 300px
+            +r(1070)
+                width: 200px
+                height: 200px        
+    &__girl
+        position: absolute
+        left: 50%
+        top: 70px
+        max-width: none
+        transform: translateX(-50%)
+        +r(1600)
+            top: -40px
+            transform: translateX(-50%) 
+        +r(1400)
+            top: -85px
+            transform: translateX(-50%) scale(0.8)                    
+        +r(1070)
+            top: -130px
+            transform: translateX(-50%) scale(0.6)
+    &__girl-wrapper
+        width: 40%
+        position: relative
+        left: 35px
+        +r(1070)
+            left: 40px
+            top: 100px
+        +r(920)
+            display: none
+    &__numbers
+        +r(1570)
+            svg
+                width: 170px
+                height: 170px
+            img
+                width: 170px
+                height: 170px
+                
+        +r(1070)
+            svg
+                width: 100px
+                height: 100px
+            img
+                width: 100px
+                height: 100px
+        +rmin(550)
+            svg
+                width: 170px
+                height: 170px
+            img
+                width: 170px
+                height: 170px
+        +r(320)   
+            display: none             
+
+@keyframes sheen 
+    100% 
+        transform: rotateZ(60deg) translate(1em, -9em)

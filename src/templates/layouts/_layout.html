@@ -1,0 +1,50 @@
+{% import "partials/_mixins.html" as mixins %}
+<!doctype html Transitional//EN">
+<html class="{{html_class}}" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    {# {% include "../partials/_media-tags.html" %} #}
+  </head>
+  <body class="{{body_class}}">
+
+       {% include "../partials/_header.html" %} 
+
+    <!-- BEGIN content -->
+<div id="barba-wrapper">
+  <div class="barba-container">
+  {% block content %}{% endblock %}
+</div>
+</div>
+
+    <!-- END content -->
+
+    
+         {% include "../partials/_footer.html" %} 
+         <button id="scroll-btn"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
+           height="45px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+     
+            <path fill="#18CEF6" d="M22.5,45L22.5,45C10.1,45,0,34.9,0,22.5v0C0,10.1,10.1,0,22.5,0h0C34.9,0,45,10.1,45,22.5v0
+              C45,34.9,34.9,45,22.5,45z"/>
+     
+          <path fill="#FFFFFF" d="M32.6,27.5c-0.3,0.7-1,1.2-1.9,1.2h0l-16.6-0.1c-0.8,0-1.5-0.5-1.8-1.3c-0.3-0.7-0.1-1.6,0.5-2.2l8.3-8.2
+            c0.8-0.8,2-0.8,2.8,0l8.2,8.3C32.8,25.8,32.9,26.7,32.6,27.5z"/>
+     
+        </svg></button>
+    <!-- BEGIN scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+    <!-- END scripts -->
+  </body>
+</html>

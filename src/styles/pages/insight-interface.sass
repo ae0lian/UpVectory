@@ -1,0 +1,262 @@
+.insight-interface
+    padding: 0
+    .banner
+        height: 900px
+        background: #53717F
+        +rmin(2000)
+            height: 1300px
+        +r(800)
+            height: 700px
+        +r(520)
+            height: 500px
+        &__inner
+            height: 100%
+            width: 100%
+            background: url('../assets/images/projects/insight-interface/header-banner.png') no-repeat center
+            @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+                background: url('../assets/images/projects/insight-interface/header-banner@2x.png') no-repeat center
+                background-size: 90% auto
+            +r(550)
+                background: url('../assets/images/projects/insight-interface/header-banner-mobile.png') no-repeat center
+                background-size: 90% auto
+
+    .about
+        &__title
+            display: block
+            font-family: 'robotobold'
+            font-size: 70px
+            color: white
+            text-align: center
+            margin: 100px auto
+            +r(800)
+                font-size: 60px
+            +r(520)
+                font-size: 40px
+                margin-top: 60px
+                margin-bottom: 30px
+        &__describe
+            display: block
+            max-width: 1200px
+            margin: 0 auto
+            font-family: 'muliregular'
+            font-size: 24px
+            color: #373537
+            margin-bottom: 2rem
+            text-align: left
+            +r(1200)
+                padding: 0 60px
+            +r(520)
+                font-size: 16px
+                padding: 0 30px
+    .project-photos
+        margin-top: 120px
+
+        .logo-block
+            position: absolute
+            top: 5px
+            left: 50%
+            transform: translateX(-50%)
+        .sub-block
+            flex-basis: calc(100%/3)
+            height: 850px
+            position: relative
+            +rmin(2000)
+                height: 1100px
+            &__title
+                position: absolute
+                width: 100%
+                bottom: 0
+                line-height: 150px
+                text-align: center
+                font-family: 'robotoregular'
+                font-size: 36px
+                color: white
+                background: rgba(255, 255, 255, 0.6)
+                +r(520)
+                    font-size: 26px
+        &__block
+            position: relative
+            height: 850px
+            +rmin(2000)
+                height: 1100px
+            &--3
+                display: flex
+        &__subtitle
+            position: absolute
+            top: 48%
+            left: 50%
+            width: 100%
+            text-align: center
+            transform: translateX(-50%)
+            font-family: 'robotoregular'
+            font-size: 36px
+            color: white
+            +r(520)
+                margin-bottom: 1rem
+                font-size: 24px
+                padding: 0 10px
+        &__title
+            position: absolute
+            width: 100%
+            text-align: center
+            top: 35%
+            left: 50%
+            transform: translateX(-50%)
+            font-family: 'robotoregular'
+            font-size: 60px
+            text-transform: uppercase
+            color: white
+            +r(520)
+                top: 36%
+                font-size: 35px
+
+
+        .get-in-touch
+            .project-photos__title
+                top: 4rem
+            &__form
+                position: absolute
+                bottom: 10%
+                left: 50%
+                transform: translateX(-50%)
+                display: flex
+                flex-direction: column
+                align-items: center
+            &__subtitle
+                margin-bottom: 3rem
+                font-family: 'robotoregular'
+                font-size : 30px
+                color : #FFFFFF
+                +r(520)
+                    font-size: 20px
+                    text-align: center
+            &__input
+                margin-bottom: 3rem
+                width : 424px
+                height : 50px
+                border-radius: 30px
+                background: white
+                +r(520)
+                    width: 320px
+            &__button
+                width : 230px
+                line-height : 60px
+                border-radius : 15px
+                margin-bottom: 3rem
+                font-family: 'robotoregular'
+                font-size : 30px
+                color: white
+                text-align: center
+                background: #7FB7B0
+                +r(520)
+                    font-size: 23px
+                    line-height: 50px
+
+    .map
+        height: 400px
+    .footer
+        display: flex
+        align-items:  flex-end
+        padding-left: 50px
+        height: 250px
+        background-color: #212C2F
+        color: white
+        font-family: 'robotoregular'
+        font-size: 30px
+        +r(500)
+            font-size: 20px
+        span
+            color: #7FB7B0
+
+// Retina
+.project-photos
+    .retina--hospitaly
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/hospitaly@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--retail
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/retail@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--360
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/360@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--restaurant
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/restaurant@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--architecture
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/architecture@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--peoples
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/peoples@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--fireplace
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/fireplace@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--fireplace
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/fireplace@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--fireplace
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/fireplace@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--studio
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/studio@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--office
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/office@2x.jpg') no-repeat left top
+            background-size: cover
+    .retina--map
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+            background: url('../assets/images/projects/insight-interface/map@2x.jpg') no-repeat left top
+            background-size: cover
+
+
+
+.project__action
+    display: block
+    position: relative
+    margin-left: auto
+    margin-top: 148px
+    margin-right: 70px
+    margin-bottom: 30px
+    text-align: center
+    overflow: hidden
+    width: 180px
+    line-height: 35px
+    background-color: #FF7E00
+    border-radius: 9px
+    text-decoration: none
+    cursor: pointer
+    font-family: 'mulibold'
+    font-size: 18px
+    color: white
+    transition: all 0.2s linear
+    +r(500)
+        margin: 50px auto
+
+    &:before 
+        content: ''
+        position: absolute
+        top: -50%
+        right: -50%
+        bottom: -50%
+        left: -50%
+        background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0))
+        transform: rotateZ(60deg) translate(-5em, 7.5em)
+
+    &:hover:before, &:focus:before 
+        animation: sheen 1s forwards
+
+
+@keyframes sheen 
+    100% 
+        transform: rotateZ(60deg) translate(1em, -9em)
